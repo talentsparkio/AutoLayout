@@ -23,17 +23,18 @@ class ViewController: UIViewController {
         self.view.addSubview(centerView)
         
         // Half of parent width
-        self.view.addConstraint(NSLayoutConstraint(item: centerView, attribute: .Width, relatedBy: .Equal, toItem: self.view, attribute: .Width, multiplier: 0.5, constant: 0))
+        let halfWidth = centerView.widthAnchor.constraintEqualToAnchor(self.view.widthAnchor, multiplier: 0.5)
         
         // Half of parent height
-        self.view.addConstraint(NSLayoutConstraint(item: centerView, attribute: .Height, relatedBy: .Equal, toItem: self.view, attribute: .Height, multiplier: 0.5, constant: 0))
+        let halfHeight = centerView.heightAnchor.constraintEqualToAnchor(self.view.heightAnchor, multiplier: 0.5)
         
         // Center horizontally
-        self.view.addConstraint(NSLayoutConstraint(item: centerView, attribute: .CenterX, relatedBy: .Equal, toItem: self.view, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        let centerX = centerView.centerXAnchor.constraintEqualToAnchor(self.view.centerXAnchor)
         
-        // Center horizontally
-        self.view.addConstraint(NSLayoutConstraint(item: centerView, attribute: .CenterY, relatedBy: .Equal, toItem: self.view, attribute: .CenterY, multiplier: 1.0, constant: 0))
+        // Center vertically
+        let centerY = centerView.centerYAnchor.constraintEqualToAnchor(self.view.centerYAnchor)
         
+        NSLayoutConstraint.activateConstraints([halfWidth, halfHeight, centerX, centerY])
     }
     
     override func didReceiveMemoryWarning() {
