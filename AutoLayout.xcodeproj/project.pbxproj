@@ -12,6 +12,7 @@
 		20BBFAE41B747B0600B09981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BBFAE21B747B0600B09981 /* Main.storyboard */; };
 		20BBFAE61B747B0600B09981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BBFAE51B747B0600B09981 /* Assets.xcassets */; };
 		20BBFAE91B747B0600B09981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BBFAE71B747B0600B09981 /* LaunchScreen.storyboard */; };
+		830BF1BB1BA3B3F200C5D699 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830BF1BA1BA3B3F200C5D699 /* LoginScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		20BBFAE51B747B0600B09981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BBFAE81B747B0600B09981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20BBFAEA1B747B0600B09981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830BF1BA1BA3B3F200C5D699 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LoginScreen.storyboard; path = ../LoginScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		20BBFADD1B747B0600B09981 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				830BF1BA1BA3B3F200C5D699 /* LoginScreen.storyboard */,
 				20BBFADE1B747B0600B09981 /* AppDelegate.swift */,
 				20BBFAE01B747B0600B09981 /* ViewController.swift */,
 				20BBFAE21B747B0600B09981 /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			files = (
 				20BBFAE91B747B0600B09981 /* LaunchScreen.storyboard in Resources */,
 				20BBFAE61B747B0600B09981 /* Assets.xcassets in Resources */,
+				830BF1BB1BA3B3F200C5D699 /* LoginScreen.storyboard in Resources */,
 				20BBFAE41B747B0600B09981 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				20BBFAEF1B747B0600B09981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
